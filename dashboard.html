@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GreenFoot</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="dashboard.html">Dashboard</a> </li>
+            <li> <a href="ecostore.html">EcoStore</a> </li>
+            <li> <a href="rewards.html">Rewards</a> </li>
+        </ul>
+
+    </nav>
+    <h1>New to GreenFoot?</h1>
+    <h2><a href="calculate.html">Calculate</a></h2>
+    <h1>Carbon Footprint Score: <span id="carbonFootprint"></span></h1> 
+
+    <script>
+        // Retrieve the fprint from Local Storage
+        var fprint = localStorage.getItem("carbonFootprint");
+        
+        // Display fprint in the HTML
+        document.getElementById("carbonFootprint").textContent = fprint;
+    </script>
+</body>
+</html>

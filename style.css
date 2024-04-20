@@ -1,0 +1,221 @@
+
+body {
+    background-color: #9cd9a0; 
+    width: 75%; 
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    color: #1d401e;
+}
+
+.logo{
+    margin-left:300px;
+    margin-top:50px;
+}
+
+#electric,
+#gas,
+#heat,
+#mileage,
+#flightLess,
+#flightMore,
+#newspaper,
+#aluminumTin {
+    margin-left: 10px; 
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: block; /* Change from float to display block */
+}
+
+#sponge,
+#cutlery,
+#trashbag,
+#beeswax,
+#bag,
+#soap,
+#towels,
+#puravida,
+#blush,
+#cow {
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 3px #1d401e solid;
+    float: left;
+}
+
+figure {
+    float: left;
+}
+
+figcaption {
+    margin-left: 15px;
+}
+
+/* styles.css */
+.progress-container {
+    width: 100%;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #76c7c0;
+    border-radius: 15px 0 0 15px;
+    transition: width 1s ease-in-out;
+}
+
+.points-display {
+    font-size: 18px;
+    color: #333;
+}
+
+.card-container {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Add perspective for 3D effect */
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align:center;
+}
+
+.card-front {
+    background-color: #76c7c0;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align:center;
+}
+
+.card-back {
+    background-color: #52b3d0;
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.taskpoints {
+ position:float;
+}
+
+article, aside, figure, footer, header, nav, section {
+	display: block;
+}
+/* adds padding to nav */
+/* Navigation bar container */
+nav {
+    background-color: #0b5725; /* Background color */
+    padding: 10px 20px; /* Padding around the navigation bar */
+    text-align: center; /* Center-align the content */
+}
+
+/* Unordered list in navigation bar */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Display list items as flex items */
+    justify-content: center; /* Center the list items */
+}
+
+/* List items in navigation bar */
+nav ul li {
+    margin: 0 10px; /* Add margin between list items */
+}
+
+/* Navigation links */
+nav ul li a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around each link */
+    display: block; /* Display links as block-level elements */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+    border-radius: 4px; /* Rounded corners for links */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #45d86f67; /* Background color when hovered */
+    color: #f1f1f1; /* Text color when hovered */
+}
+
+
+/* Product container styles */
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Width of the product container */
+    background-color: #fff; /* White background */
+}
+
+/* Product image styles */
+.product-container img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Light gray border at bottom */
+    margin-bottom: 10px; /* Margin below the image */
+}
+
+/* Product details styles */
+.product-container p {
+    margin: 5px 0; /* Margin around text */
+    text-align: center; /* Center-align text */
+}
+
+/* Add to cart button styles */
+.product-container button {
+    padding: 10px 15px; /* Padding */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 10px; /* Margin above button */
+    width: 100%; /* Full width of the container */
+}
+
+/* Button hover effect */
+.product-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
